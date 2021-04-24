@@ -7,7 +7,7 @@
   <body>
     <h1>title</h1>
     <h2>pepe calvo</h2>
-    <a href="https://5813954.github.io/MY-WEBPAGE/"> Accessibility Standards</a>
+    <a href="https://5813954.github.io/MY-WEBPAGE/Accesibility-standarts.md"> Accessibility Standards</a>
   </body>
   
 </html>
