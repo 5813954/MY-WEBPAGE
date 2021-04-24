@@ -1,1 +1,67 @@
-
+<!Doctype html>
+<html>
+	<head>
+		<title>What is the Digital Signature?</title>
+		<meta charset="utf-8">
+		</head>
+		<body>
+		<style>
+		body {
+			background-color: rgb(220,185,50);
+			font-size: 18px;
+			font-family:sans-serif;
+			margin:3em;
+		}
+		h1 {
+			font-weight: 600;
+			font-variant: small-caps slashed-zero;
+			font-size: 2.2em;
+			text-align: center;
+			text-decoration: underline overline red;
+		}
+		h2 {
+			color:rgb(220,130,0);
+			font-weight:500;
+			font-family:cursive;
+			font-size:2em;
+			font-decoration:underline;
+			text-indet:10mm;
+			letter-spacing:1px;
+		}
+		h3 {
+			color:rgb(220,130,0);
+			font-variant:small-caps;
+			font-family:monospace;
+			font-size:2em;
+			text-indet:6mm;
+			text-decoration:underline;
+		}
+		</style>
+	<h1>Digital Signature</h1>
+	<p>A <strong>digital</strong> signature is a mathematical scheme for verifying the authenticity of digital messages or documents.It ussually consists on three algorythms:
+	<ul>
+	<li>A key generation algorithm that selects a private key uniformly at random from a set of possible private keys. The algorithm outputs the private key and a corresponding public key</li>
+	<li>A <em>signing algorithm</em> that, given a message and a private key, produces a signature.</li>
+	<li>A <em>signature verifying</em> algorithm that, given the message, public key and signature, either accepts or rejects the message's claim to authenticity.</li>
+	</ul>
+	<p>Two main properties are required. <strong>First</strong>, the authenticity of a signature generated from a fixed message and fixed private key can be verified by using the corresponding public key.<strong>Secondly</strong>, it should be computationally infeasible to generate a valid signature for a party without knowing that party's private key.
+	<h2>Differences between digital signature and digital certificates</h2>
+	<p>Now it’s time to face one of the most common questions that come up in this industry, as is what differentiates the digital signature of a digital certificate.<br>
+	Digital signatures are defined above, but what is a <em><strong>digital certificate</strong></em>? A digital certificate is a computer file that allows to identify the person who signs electronically.
+	It is an essential element of the qualified electronic signature, thus granting the same legal validity as the handwritten signature.<br>
+	Digital certificates are issued by Trust Service Providers, for instance the Royal Mint (FNMT) in Spain. It can be used for very different purposes, to sign private documents for all kinds of contracts, as well as official documents like those related to tax payments, or to access to information related to Social Security, employment offices, etc.
+	<h2>Applications</h2>
+	<p>Here are some common reasons for applying a digital signature to communications:
+	<ul>
+	<li><strong>Authentication</strong>:Although messages may often include information about the entity sending a message, that information may not be accurate. Digital signatures can be used to authenticate the identity of the source messages.
+	<li><strong>Integrity</strong>:In many ocasions, the sender and receiver of a message may have a need for confidence that the message has not been altered during transmission. Although encryption hides the contents of a message, it may be possible to change an encrypted message without understanding it. However, if a message is digitally signed, any change in the message after signature <strong>invalidates the signature.</strong>
+	<li><strong>Non-repudiation</strong>:Non-repudiation,or more specifically non-repudiation of origin, is an important aspect of digital signatures. By this property, an entity that has signed some information cannot at a later time deny having signed it.
+	</ul>
+	<h3>How could I make the digital signature?</h3>
+	<ol>
+	<li>Open Internet Explorer.
+	<li>On the <strong>Tools</strong> menu, click <strong>Internet Options</strong>, and then click the <strong>Content tab</strong>.
+	<li>Click <strong>Certificates</strong>, and then click the <strong>Personal</strong> tab.
+	</ol>
+	<p>As it can be difficult to understand the process, I'll show you an alternative in order to make a suitable digital sign.
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/3ScDyOpm05I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
